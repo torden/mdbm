@@ -7,7 +7,6 @@ The following is pre-build packages for easy install to your machine.
 - MDBM is a high-performance, memory-mapped hash database similar to the homegrown libhash.
 - The records stored in a mdbm database may have keys and values of arbitrary and variable lengths.
 
-[![Build Status](https://github.com/torden/mdbm/actions/workflows/mdbm.yml/badge.svg)](https://github.com/torden/mdbm/actions)
 [![GitHub version](https://img.shields.io/github/v/release/yahoo/mdbm)](https://github.com/yahoo/mdbm)
 
 
@@ -79,12 +78,12 @@ The following is pre-build packages for easy install to your machine.
 
 |OS/Release Ver.|Arch.|Pkg File|dpkg::Depends|dpkg::Suggests|Unusual|
 |---|---|---|---|---|---|
-|Ubuntu 22.xx|64bit|mdbm-4.13.0-Jammy-jellyfish.deb|zlib1g, libreadline8, libtinfo6, libstdc++6, libc6|perl-modules|including libcrypto.so.1.1|
-|Ubuntu 19.xx|64bit|mdbm-4.13.0-Disco_Dingo.deb|zlib1g, libssl1.1, libreadline8, libtinfo6, libstdc++6, libc6|perl-modules|-|
-|Ubuntu 18.xx|64bit|mdbm-4.13.0-Bionic_Beaver.deb|zlib1g, libssl1.1, libreadline7, libtinfo5, libstdc++6, libc6|per-modules|-|
-|Ubuntu 16.xx|64bit|mdbm-4.13.0-Xenial_Xerus.deb|zlib1g, libssl1.0.0, libreadline6, libtinfo5, libstdc++6, libc6|perl-modules|-|
-|Ubuntu 14.xx|64bit|mdbm-4.13.0-Trusty_Tahr.deb|zlib1g, libssl1.0.0, libreadline6, libtinfo5, libstdc++6, libc6|perl-modules|-|
-|Ubuntu 12.xx|64bit|mdbm-4.13.0-Precise_Pangolin.deb|zlib1g, libssl1.0.0, libreadline6, libtinfo5, libstdc++6, libc6|perl-modules|-|
+|Ubuntu 22.xx|64bit|`mdbm-4.13.0-Jammy-jellyfish.deb`|zlib1g<br />libreadline8<br />libtinfo6<br />libstdc++6<br />libc6|perl-modules|including `libcrypto.so.1.1`|
+|Ubuntu 19.xx|64bit|`mdbm-4.13.0-Disco_Dingo.deb`|zlib1g<br />libssl1.1<br />libreadline8<br />libtinfo6<br />libstdc++6<br />libc6|perl-modules|-|
+|Ubuntu 18.xx|64bit|`mdbm-4.13.0-Bionic_Beaver.deb`|zlib1g<br />libssl1.1<br />libreadline7<br />libtinfo5<br />libstdc++6<br />libc6|per-modules|-|
+|Ubuntu 16.xx|64bit|`mdbm-4.13.0-Xenial_Xerus.deb`|zlib1g<br />libssl1.0.0<br />libreadline6<br />libtinfo5<br />libstdc++6<br />libc6|perl-modules|-|
+|Ubuntu 14.xx|64bit|`mdbm-4.13.0-Trusty_Tahr.deb`|zlib1g<br />libssl1.0.0<br />libreadline6<br />libtinfo5<br />libstdc++6<br />libc6|perl-modules|-|
+|Ubuntu 12.xx|64bit|`mdbm-4.13.0-Precise_Pangolin.deb`|zlib1g<br />libssl1.0.0<br />libreadline6<br />libtinfo5<br />libstdc++6<br />libc6|perl-modules|-|
 
 
 ### Installation
@@ -100,20 +99,20 @@ dpkg -i pkg/ubuntu/mdbm-XXX.deb
 
 |OS/Release Ver.|Arch.|Pkg File|
 |---|---|---|
-|RHEL6 (CentOS6.x)|64bit|mdbm-4.12.3.0-1.el6.x86_64.rpm|
-|||mdbm-debuginfo-4.12.3.0-1.el6.x86_64.rpm|
-|||mdbm-devel-4.12.3.0-1.el6.x86_64.rpm|
-|||mdbm-perl-4.12.3.0-1.el6.x86_64.rpm|
-|RHEL7 (CentOS7.x)|64bit|mdbm-4.12.3.0-1.el6.x86_64.rpm|
-|||mdbm-debuginfo-4.12.3.0-1.el6.x86_64.rpm|
-|||mdbm-devel-4.12.3.0-1.el6.x86_64.rpm|
-|||mdbm-perl-4.12.3.0-1.el6.x86_64.rpm|
-|RHEL8 (CentOS8.x)|64bit|mdbm-4.12.4.0-1.el8.x86_64.rpm|
-|||mdbm-debuginfo-4.12.4.0-1.el8.x86_64.rpm|
-|||mdbm-debugsource-4.12.4.0-1.el8.x86_64.rpm|
-|||mdbm-devel-4.12.4.0-1.el8.x86_64.rpm|
-|||mdbm-perl-4.12.4.0-1.el8.x86_64.rpm|
-|||mdbm-perl-debuginfo-4.12.4.0-1.el8.x86_64.rpm|
+|RHEL6 (CentOS6.x)|64bit|`mdbm-4.12.3.0-1.el6.x86_64.rpm`|
+|||`mdbm-debuginfo-4.12.3.0-1.el6.x86_64.rpm`|
+|||`mdbm-devel-4.12.3.0-1.el6.x86_64.rpm`|
+|||`mdbm-perl-4.12.3.0-1.el6.x86_64.rpm`|
+|RHEL7 (CentOS7.x)|64bit|`mdbm-4.12.3.0-1.el6.x86_64.rpm`|
+|||`mdbm-debuginfo-4.12.3.0-1.el6.x86_64.rpm`|
+|||`mdbm-devel-4.12.3.0-1.el6.x86_64.rpm`|
+|||`mdbm-perl-4.12.3.0-1.el6.x86_64.rpm`|
+|RHEL8 (CentOS8.x)|64bit|`mdbm-4.12.4.0-1.el8.x86_64.rpm`|
+|||`mdbm-debuginfo-4.12.4.0-1.el8.x86_64.rpm`|
+|||`mdbm-debugsource-4.12.4.0-1.el8.x86_64.rpm`|
+|||`mdbm-devel-4.12.4.0-1.el8.x86_64.rpm`|
+|||`mdbm-perl-4.12.4.0-1.el8.x86_64.rpm`|
+|||`mdbm-perl-debuginfo-4.12.4.0-1.el8.x86_64.rpm`|
 
 ### Installation (RHEL6,7,8, CentOS 6,7,8)
 
@@ -132,7 +131,7 @@ rpm -Uvh pkg/rhel/rhel/elX/mdbm-debuginfo-4.12.3.0-1.elX.x86_64.rpm
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-curl -s -O https://raw.githubusercontent.com/torden/mdbm/master/pkg/osx/mdbm.rb
+curl -sLO https://github.com/torden/mdbm/raw/main/osx/mdbm.rb
 brew install mdbm.rb
 
 # OR (as soon)
