@@ -64,7 +64,8 @@ The following is pre-build packages for easy install to your machine.
 |       |-- mdbm-perl-4.12.4.0-1.el8.x86_64.rpm
 |       `-- mdbm-perl-debuginfo-4.12.4.0-1.el8.x86_64.rpm
 `-- ubuntu
-    |-- mdbm-4.13.0-Jammy-jellyfish.deb
+    |-- mdbm-4.13.0-Jammy_Jellyfish.deb
+    |-- mdbm-4.13.0-Focal_Fossa.deb
     |-- mdbm-4.13.0-Bionic_Beaver.deb
     |-- mdbm-4.13.0-Disco_Dingo.deb
     |-- mdbm-4.13.0-Precise_Pangolin.deb
@@ -79,6 +80,7 @@ The following is pre-build packages for easy install to your machine.
 |OS/Release Ver.|Arch.|Pkg File|dpkg::Depends|dpkg::Suggests|Unusual|
 |---|---|---|---|---|---|
 |Ubuntu 22.xx|64bit|`mdbm-4.13.0-Jammy-jellyfish.deb`|zlib1g<br />libreadline8<br />libtinfo6<br />libstdc++6<br />libc6|perl-modules|including `libcrypto.so.1.1`|
+|Ubuntu 20.xx|64bit|`mdbm-4.13.0-Focal_Fossa.deb`|zlib1g<br />libssl1.1<br />libreadline8<br />libtinfo5<br />libstdc++6<br />libc6|perl-modules|-|
 |Ubuntu 19.xx|64bit|`mdbm-4.13.0-Disco_Dingo.deb`|zlib1g<br />libssl1.1<br />libreadline8<br />libtinfo6<br />libstdc++6<br />libc6|perl-modules|-|
 |Ubuntu 18.xx|64bit|`mdbm-4.13.0-Bionic_Beaver.deb`|zlib1g<br />libssl1.1<br />libreadline7<br />libtinfo5<br />libstdc++6<br />libc6|per-modules|-|
 |Ubuntu 16.xx|64bit|`mdbm-4.13.0-Xenial_Xerus.deb`|zlib1g<br />libssl1.0.0<br />libreadline6<br />libtinfo5<br />libstdc++6<br />libc6|perl-modules|-|
@@ -89,8 +91,11 @@ The following is pre-build packages for easy install to your machine.
 ### Installation
 
 ```shell
-git clone https://github.com/torden/mdbm
-dpkg -i pkg/ubuntu/mdbm-XXX.deb
+# Example: Ubuntu 20.XX (Focal Fossa)
+curl -sLO https://github.com/torden/mdbm/raw/main/ubuntu/mdbm-4.13.0-Focal_Fossa.deb
+sudo apt update -y
+sudo apt install -y zlib1g libssl1.1 libreadline8 libtinfo5 libstdc++6 libc6
+sudo dpkg -i ubuntu/mdbm-4.13.0-Focal_Fossa.deb
 ```
 
 ## RedHat (RHEL)
@@ -117,10 +122,12 @@ dpkg -i pkg/ubuntu/mdbm-XXX.deb
 ### Installation (RHEL6,7,8, CentOS 6,7,8)
 
 ```shell
-git clone https://github.com/torden/mdbm
-rpm -Uvh pkg/rhel/rhel/elX/mdbm-4.12.3.0-1.elX.x86_64.rpm
-rpm -Uvh pkg/rhel/rhel/elX/mdbm-devel-4.12.3.0-1.elX.x86_64.rpm
-rpm -Uvh pkg/rhel/rhel/elX/mdbm-debuginfo-4.12.3.0-1.elX.x86_64.rpm
+
+# Example: For CentOS 8, RHEL 8, RockyLinux 8
+sudo rpm -Uvh mdbm-4.12.4.0-1.el8.x86_64.rpm
+sudo rpm -Uvh mdbm-devel-4.12.4.0-1.el8.x86_64.rpm
+sudo rpm -Uvh mdbm-debuginfo-4.12.4.0-1.el8.x86_64.rpm
+
 ```
 
 
