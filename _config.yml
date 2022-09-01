@@ -1,3 +1,8 @@
 theme: jekyll-theme-cayman
 title: Just! MDBM Packages
 description: The following is pre-build packages for easy install to your machine.
+exclude:
+  - java/README.md
+
+plugins:
+  - jekyll-sitemap
